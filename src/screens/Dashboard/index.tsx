@@ -1,12 +1,17 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-interface Props {
-    title: string;
-}
+import {
+  Container,
+  Header
+} from './styles';
 
-export function Dashboard({ title }: Props) {
-  return <View>
-      <Text>{ title }</Text>
-  </View>;
+export function Dashboard() {
+  return (
+    <Container>
+      <Header>
+        <Text>X</Text>
+      </Header>
+    </Container>)
+  ;
 }

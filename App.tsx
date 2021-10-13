@@ -25,7 +25,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Dashboard title="Bare Workflow com Typescript" />
+      <Dashboard />
     </ThemeProvider>
   );
 }
