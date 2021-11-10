@@ -11,6 +11,7 @@ import {
 
 import theme from './src/global/styles/theme';
 import { Dashboard } from './src/screens/Dashboard';
+import { Register } from './src/screens/Register';
 
 export default function App() {
   const [fonstsLoaded] = useFonts({
@@ -23,9 +24,14 @@ export default function App() {
     return <AppLoading />
   }
 
+  const mockItem = {
+    key: '1',
+    name: 'Alimentação'
+  }
+
   return (
     <ThemeProvider theme={theme}>
-      <Dashboard />
+      <Register />
     </ThemeProvider>
   );
 }
