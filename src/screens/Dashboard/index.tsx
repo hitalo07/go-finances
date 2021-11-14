@@ -12,6 +12,7 @@ import {
   User,
   UserGreeting,
   UserName,
+  LogoutButton,
   PowerOffIcon,
   HighlightCards,
   Transactions,
@@ -72,7 +73,9 @@ export function Dashboard() {
             </User>
           </UserInfo>
 
-          <PowerOffIcon />
+          <LogoutButton onPress={() => {}}>
+            <PowerOffIcon />
+          </LogoutButton>
         </UserWapper>
       </Header>
 
